@@ -12,4 +12,4 @@ def bob(request):
     return HttpResponse("Hello, Bob!")
 
 def greet(request,name):
-    return HttpResponse(f"Hello, {name}!")
+    return HttpResponse(f"Hello, {name.capitalize()}!")
