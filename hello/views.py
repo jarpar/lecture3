@@ -10,5 +10,7 @@ def jarek(request):
 def bob(request):
     return HttpResponse("Hello, Bob!")
 
-def greet(request,name):
-    return HttpResponse(f"Hello, {name.capitalize()}!")
+def greet(request, name):
+    return render(request, "hello/greet.html", {
+        "name": name.capitalize()
+    })
