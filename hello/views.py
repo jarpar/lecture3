@@ -5,3 +5,11 @@ from django.shortcuts import render
 def index(request):
     return HttpResponse("Hello, world!")
 
+def jarek(request):
+    return HttpResponse("Hello, Jarek!")
+
+def bob(request):
+    return HttpResponse("Hello, Bob!")
+
+def greet(request,name):
+    return HttpResponse(f"Hello, {name}!")
